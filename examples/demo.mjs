@@ -1,0 +1,2 @@
+// Purpose: Offline SVG rendering demonstration with no model or network dependency.
+import{readFile,writeFile}from'node:fs/promises';import{renderCardSVG}from'../src/index.mjs';const verdict=JSON.parse(await readFile(new URL('./verdict.json',import.meta.url),'utf8'));const path=new URL('./demo-card.svg',import.meta.url);await writeFile(path,renderCardSVG(verdict,'dark'));console.log(`Rendered ${path.pathname}`);
