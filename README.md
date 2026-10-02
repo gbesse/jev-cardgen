@@ -34,6 +34,10 @@ It does not. Schema 1 carries one headline, normalized bars, optional verbatim c
 
 No fonts or assets are fetched. Sixteen bars and two displayed citations keep the square card legible. SVG is guaranteed; PNG depends on an installed system renderer.
 
+## Shareable demo report
+
+Run `npm run demo:report` to capture this repository’s bundled example as one JSON object with the project purpose, version and complete demo output. The command fails if the demo fails, so the report is useful when sharing a reproducible first look or reporting unexpected behavior. The bundled demo’s data and safety boundaries still apply.
+
 ## Validation
 
 `npm run check`, `npm run typecheck`, `npm test`, and `npm run demo` run in CI on Node 22 and 24. Geometry parity is unit-tested; the project does not use fragile full-pixel snapshots.
